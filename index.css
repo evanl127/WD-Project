@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(27, 27, 110);
+    background-color: rgb(47, 47, 185);
 }
 
 .log-in-box{
@@ -12,22 +12,45 @@ body{
     margin-right: 30%;
     border-color: rgb(5, 5, 70);
 }
+
 input{
     height: 40px;
     text-align: center;
     
 }
+
 h1{
     display:flex;
     flex-direction: column;
     color: white;
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 30px;
     text-align: center;
 }
 
+.txt-input{
+    margin-bottom: 5px;    
+}
+
 #sign-in-btn{
+    margin-top: 10px;
     border-color: rgb(3, 3, 77);   
     background-color: rgb(73, 73, 236);
-    align-self:center
+    color:white;
+    border-color: blue;
+    border-radius:20px;
+    align-self:center;
+    width:150px;
+    height: 70px;
 }
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 200px;
+    width:200px;
+}
+
 
