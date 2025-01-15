@@ -1,0 +1,23 @@
+.question-box{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(206, 212, 243);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+select{
+    border-color: grey;
+    border-radius: 2px;
+}
+
+.txt-input{
+    outline:none;
+    background-color: none;
+    border: none;
+    border-bottom: 2px grey;
+}
+
+.txt-input:focus{
+    border-bottom: 2px blue;
+}

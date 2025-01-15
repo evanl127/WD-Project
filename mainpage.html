@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="mainpage.css">
+    <title>Form</title>
 </head>
 <body>
-    
+    <script src="mainpage.js"></script>
+    <div id = "heading">
+        <h1>BTHS Report Form</h1>
+    </div>
+        <div class="question-box">
+            <label for="main-category">Main Category of Problem</label>
+            <select name="main-category" id="category">
+                <option value="idle"></option>
+                <option value="hardware">Hardware</option>
+                <option value="software">Software</option>
+                <option value="smartboard">Smartboard</option>
+                <option value="wires">Wires</option>
+                <option value="keyboardMouse">Keyboard/Mouse</option>
+                <option value="internet">Internet Connection</option>
+                <option value="os">Operating System</option>
+                <option value="printer">Printer</option>
+                <option value="copier">Copier</option>
+                <option value="other">Other Problems</option>
+            </select>
+            <p></p>
+            <label for="affected-place">Affected People/Area</label>
+            <select name="affected-place" id="affected">
+                <option value="idle"></option>
+                <option value="classroom">Whole Classroom</option>
+                <option value="station">Teacher Station</option>
+                <option value="laptop">Teacher Laptop</option>
+                <option value="less3">3 or less Student Computers</option>
+                <option value="more3">More than 3 Student Computers</option>
+                <option value="other">Other pieces of equipment</option>
+            </select>
+            <p></p>
+            <label for="issue">Describe the issue.</label>
+            <input name="issue" class="txt-input" id="issue-desc" type="text" placeholder="">
+            <p></p>
+            <label for="tried">What have you tried?</label>
+            <input name="tried" class="txt-input" id="tried-desc" type="text" placeholder="">
+            <p></p>
+            <label for="permission">Is admin permission needed to fix the problem</label>
+            <select name="permission" id="permission">
+                <option value="idle"></option>
+                <option value="noAdmin">No</option>
+                <option value="yesAdmin">Yes</option>
+                <option value="unsure">Unsure</option>
+            </select>
+            <p></p>
+            <label for="floor">Floor Number</label>
+            <select name="floor">
+                <option value="idle"></option>
+                <option value="0">Basement</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+            </select>
+            <p></p>
+            <label for="side">Which side of the building</label>
+            <select name="side">
+                <option value="idle"></option>
+                <option value="center">Center</option>
+                <option value="north">North</option>
+                <option value="south">South</option>
+                <option value="east">East</option>
+                <option value="west">West</option>
+            </select>
+            <p></p>
+            <label for="roomNum">What is the room number</label>
+            <input name="roomNum" class="txt-input" id="roomNumber" type="text" placeholder="">
+            <p></p>
+            <label for="numComp">Numbers of computers affected (N/A if none)</label>
+            <input name="numComp" class="txt-input" id="numComp" type="text" placeholder="">
+            <p></p>
+            <label for="teacherName">Name of Teacher</label>
+            <input name="teacherName" class="txt-input" id="teacherName" type="text" placeholder="">
+            
+        </div>
+       
 </body>
 </html>
