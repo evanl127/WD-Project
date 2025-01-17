@@ -16,7 +16,6 @@ body{
 input{
     height: 40px;
     text-align: center;
-    
 }
 
 h1{
@@ -41,7 +40,7 @@ button{
     border-radius:20px;
     align-self:center;
     width:150px;
-    height: 70px;
+    height: 35px;
 }
 
 #logo{

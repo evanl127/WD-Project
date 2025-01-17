@@ -1,23 +1,67 @@
+body{
+    background-color: rgb(47, 47, 185)
+}
+
 .question-box{
     display:flex;
     flex-direction: column;
-    background-color: rgb(206, 212, 243);
+    background-color: rgb(149, 167, 255);
+    border-color: rgb(2, 2, 90);
     border-radius: 4px;
     padding: 10px;
+    margin-left:25%;
+    margin-right: 25%;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 select{
-    border-color: grey;
+    border:grey 3px solid;
     border-radius: 2px;
+    padding:12px 20px;
 }
 
 .txt-input{
+    display: inline-block;
     outline:none;
+    padding:12px 20px;
     background-color: none;
-    border: none;
-    border-bottom: 2px grey;
+    border: grey 3px solid;
 }
 
-.txt-input:focus{
-    border-bottom: 2px blue;
+.txt-input:focus, select:focus{
+    outline:none;
+    border: 3px blue solid;
+}
+
+#start{
+    width: 20%;
+    height: 25px;
+}
+
+#heading{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color:white
+}
+
+#submit-box{
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+#submit-button{
+    margin-top: 10px;
+    font-size: 30px;
+    border-color: rgb(3, 3, 77);   
+    background-color: rgb(73, 73, 236);
+    color:white;
+    border-color: blue;
+    border-radius:20px;
+    align-self:center;
+    width:250px;
+    height: 70px;
+}
+#submit-button:active{
+    background-color: rgb(58, 58, 184);
 }

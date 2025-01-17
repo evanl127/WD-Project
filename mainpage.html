@@ -9,7 +9,7 @@
 <body>
     <script src="mainpage.js"></script>
     <div id = "heading">
-        <h1>BTHS Report Form</h1>
+        <h1 >BTHS Report Form</h1>
     </div>
         <div class="question-box">
             <label for="main-category">Main Category of Problem</label>
@@ -53,7 +53,7 @@
             </select>
             <p></p>
             <label for="floor">Floor Number</label>
-            <select name="floor">
+            <select name="floor" id = "floor">
                 <option value="idle"></option>
                 <option value="0">Basement</option>
                 <option value="1">1</option>
@@ -66,7 +66,7 @@
             </select>
             <p></p>
             <label for="side">Which side of the building</label>
-            <select name="side">
+            <select name="side" id = "side">
                 <option value="idle"></option>
                 <option value="center">Center</option>
                 <option value="north">North</option>
@@ -83,8 +83,15 @@
             <p></p>
             <label for="teacherName">Name of Teacher</label>
             <input name="teacherName" class="txt-input" id="teacherName" type="text" placeholder="">
-            
+            <p></p>
+            <label for="start">Date Noticed:</label>
+            <input type="date" id="start" name="trip-start" value="mm-dd-yy" min="2024-01-01" max="2025-12-31" />
+            <p></p>
+            <label for="picture">Upload a picture of the incident:</label>
+            <input type="file" id="picture" name="picture accept="image/png, image/jpeg" />
         </div>
-       
+        <div id="submit-box">
+            <button id="submit-button">Submit</button>
+        </div>
 </body>
 </html>
